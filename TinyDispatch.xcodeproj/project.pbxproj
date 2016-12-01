@@ -1,0 +1,359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41EC6B751DF05DD600AE29B6 /* TinyDispatch.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 41EC6B741DF05DD600AE29B6 /* TinyDispatch.hpp */; };
+		41EC6B771DF05DD600AE29B6 /* TinyDispatchPriv.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 41EC6B761DF05DD600AE29B6 /* TinyDispatchPriv.hpp */; };
+		41EC6B791DF05DD600AE29B6 /* TinyDispatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41EC6B781DF05DD600AE29B6 /* TinyDispatch.cpp */; };
+		41EC6B861DF05DE700AE29B6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41EC6B851DF05DE700AE29B6 /* main.cpp */; };
+		41EC6B8A1DF05DEE00AE29B6 /* libTinyDispatch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41EC6B711DF05DD600AE29B6 /* libTinyDispatch.a */; };
+		41EC6B8F1DF0604200AE29B6 /* Queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41EC6B8D1DF0604200AE29B6 /* Queue.cpp */; };
+		41EC6B901DF0604200AE29B6 /* Queue.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 41EC6B8E1DF0604200AE29B6 /* Queue.hpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		41EC6B811DF05DE600AE29B6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		41EC6B711DF05DD600AE29B6 /* libTinyDispatch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTinyDispatch.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		41EC6B741DF05DD600AE29B6 /* TinyDispatch.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TinyDispatch.hpp; sourceTree = "<group>"; };
+		41EC6B761DF05DD600AE29B6 /* TinyDispatchPriv.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TinyDispatchPriv.hpp; sourceTree = "<group>"; };
+		41EC6B781DF05DD600AE29B6 /* TinyDispatch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TinyDispatch.cpp; sourceTree = "<group>"; };
+		41EC6B831DF05DE600AE29B6 /* TinyDispatchTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TinyDispatchTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41EC6B851DF05DE700AE29B6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		41EC6B8D1DF0604200AE29B6 /* Queue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Queue.cpp; sourceTree = "<group>"; };
+		41EC6B8E1DF0604200AE29B6 /* Queue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41EC6B6E1DF05DD600AE29B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41EC6B801DF05DE600AE29B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41EC6B8A1DF05DEE00AE29B6 /* libTinyDispatch.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41EC6B681DF05DD600AE29B6 = {
+			isa = PBXGroup;
+			children = (
+				41EC6B731DF05DD600AE29B6 /* TinyDispatch */,
+				41EC6B841DF05DE700AE29B6 /* TinyDispatchTest */,
+				41EC6B721DF05DD600AE29B6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		41EC6B721DF05DD600AE29B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41EC6B711DF05DD600AE29B6 /* libTinyDispatch.a */,
+				41EC6B831DF05DE600AE29B6 /* TinyDispatchTest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41EC6B731DF05DD600AE29B6 /* TinyDispatch */ = {
+			isa = PBXGroup;
+			children = (
+				41EC6B741DF05DD600AE29B6 /* TinyDispatch.hpp */,
+				41EC6B761DF05DD600AE29B6 /* TinyDispatchPriv.hpp */,
+				41EC6B781DF05DD600AE29B6 /* TinyDispatch.cpp */,
+				41EC6B8D1DF0604200AE29B6 /* Queue.cpp */,
+				41EC6B8E1DF0604200AE29B6 /* Queue.hpp */,
+			);
+			path = TinyDispatch;
+			sourceTree = "<group>";
+		};
+		41EC6B841DF05DE700AE29B6 /* TinyDispatchTest */ = {
+			isa = PBXGroup;
+			children = (
+				41EC6B851DF05DE700AE29B6 /* main.cpp */,
+			);
+			path = TinyDispatchTest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		41EC6B6F1DF05DD600AE29B6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41EC6B901DF0604200AE29B6 /* Queue.hpp in Headers */,
+				41EC6B751DF05DD600AE29B6 /* TinyDispatch.hpp in Headers */,
+				41EC6B771DF05DD600AE29B6 /* TinyDispatchPriv.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		41EC6B701DF05DD600AE29B6 /* TinyDispatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41EC6B7C1DF05DD600AE29B6 /* Build configuration list for PBXNativeTarget "TinyDispatch" */;
+			buildPhases = (
+				41EC6B6D1DF05DD600AE29B6 /* Sources */,
+				41EC6B6E1DF05DD600AE29B6 /* Frameworks */,
+				41EC6B6F1DF05DD600AE29B6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TinyDispatch;
+			productName = TinyDispatch;
+			productReference = 41EC6B711DF05DD600AE29B6 /* libTinyDispatch.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		41EC6B821DF05DE600AE29B6 /* TinyDispatchTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41EC6B871DF05DE700AE29B6 /* Build configuration list for PBXNativeTarget "TinyDispatchTest" */;
+			buildPhases = (
+				41EC6B7F1DF05DE600AE29B6 /* Sources */,
+				41EC6B801DF05DE600AE29B6 /* Frameworks */,
+				41EC6B811DF05DE600AE29B6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TinyDispatchTest;
+			productName = TinyDispatchTest;
+			productReference = 41EC6B831DF05DE600AE29B6 /* TinyDispatchTest */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41EC6B691DF05DD600AE29B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = sr3u;
+				TargetAttributes = {
+					41EC6B701DF05DD600AE29B6 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					41EC6B821DF05DE600AE29B6 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 41EC6B6C1DF05DD600AE29B6 /* Build configuration list for PBXProject "TinyDispatch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 41EC6B681DF05DD600AE29B6;
+			productRefGroup = 41EC6B721DF05DD600AE29B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41EC6B701DF05DD600AE29B6 /* TinyDispatch */,
+				41EC6B821DF05DE600AE29B6 /* TinyDispatchTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41EC6B6D1DF05DD600AE29B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41EC6B791DF05DD600AE29B6 /* TinyDispatch.cpp in Sources */,
+				41EC6B8F1DF0604200AE29B6 /* Queue.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41EC6B7F1DF05DE600AE29B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41EC6B861DF05DE700AE29B6 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		41EC6B7A1DF05DD600AE29B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		41EC6B7B1DF05DD600AE29B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		41EC6B7D1DF05DD600AE29B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		41EC6B7E1DF05DD600AE29B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		41EC6B881DF05DE700AE29B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		41EC6B891DF05DE700AE29B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41EC6B6C1DF05DD600AE29B6 /* Build configuration list for PBXProject "TinyDispatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41EC6B7A1DF05DD600AE29B6 /* Debug */,
+				41EC6B7B1DF05DD600AE29B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41EC6B7C1DF05DD600AE29B6 /* Build configuration list for PBXNativeTarget "TinyDispatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41EC6B7D1DF05DD600AE29B6 /* Debug */,
+				41EC6B7E1DF05DD600AE29B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		41EC6B871DF05DE700AE29B6 /* Build configuration list for PBXNativeTarget "TinyDispatchTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41EC6B881DF05DE700AE29B6 /* Debug */,
+				41EC6B891DF05DE700AE29B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41EC6B691DF05DD600AE29B6 /* Project object */;
+}
