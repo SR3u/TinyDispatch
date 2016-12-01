@@ -15,11 +15,7 @@
 #include "Queue.hpp"
 namespace TinyDispatch
 {
-    class TinyDispatch
-    {
-    public:
-        void HelloWorld(const char *);
-    };
+    
 }
 #pragma GCC visibility pop
 #endif

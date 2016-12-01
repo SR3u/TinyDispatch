@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		41EC6B751DF05DD600AE29B6 /* TinyDispatch.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 41EC6B741DF05DD600AE29B6 /* TinyDispatch.hpp */; };
 		41EC6B771DF05DD600AE29B6 /* TinyDispatchPriv.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 41EC6B761DF05DD600AE29B6 /* TinyDispatchPriv.hpp */; };
-		41EC6B791DF05DD600AE29B6 /* TinyDispatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41EC6B781DF05DD600AE29B6 /* TinyDispatch.cpp */; };
 		41EC6B861DF05DE700AE29B6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41EC6B851DF05DE700AE29B6 /* main.cpp */; };
 		41EC6B8A1DF05DEE00AE29B6 /* libTinyDispatch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41EC6B711DF05DD600AE29B6 /* libTinyDispatch.a */; };
 		41EC6B8F1DF0604200AE29B6 /* Queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41EC6B8D1DF0604200AE29B6 /* Queue.cpp */; };
@@ -32,7 +31,6 @@
 		41EC6B711DF05DD600AE29B6 /* libTinyDispatch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTinyDispatch.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		41EC6B741DF05DD600AE29B6 /* TinyDispatch.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TinyDispatch.hpp; sourceTree = "<group>"; };
 		41EC6B761DF05DD600AE29B6 /* TinyDispatchPriv.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TinyDispatchPriv.hpp; sourceTree = "<group>"; };
-		41EC6B781DF05DD600AE29B6 /* TinyDispatch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TinyDispatch.cpp; sourceTree = "<group>"; };
 		41EC6B831DF05DE600AE29B6 /* TinyDispatchTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TinyDispatchTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41EC6B851DF05DE700AE29B6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		41EC6B8D1DF0604200AE29B6 /* Queue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Queue.cpp; sourceTree = "<group>"; };
@@ -81,7 +79,6 @@
 			children = (
 				41EC6B741DF05DD600AE29B6 /* TinyDispatch.hpp */,
 				41EC6B761DF05DD600AE29B6 /* TinyDispatchPriv.hpp */,
-				41EC6B781DF05DD600AE29B6 /* TinyDispatch.cpp */,
 				41EC6B8D1DF0604200AE29B6 /* Queue.cpp */,
 				41EC6B8E1DF0604200AE29B6 /* Queue.hpp */,
 			);
@@ -188,7 +185,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41EC6B791DF05DD600AE29B6 /* TinyDispatch.cpp in Sources */,
 				41EC6B8F1DF0604200AE29B6 /* Queue.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
