@@ -23,7 +23,12 @@ int main(int argc, const char * argv[])
         sleep(1);
         printf("wake up (2)!\n");
     });
-    q->sync([](){
+    q->sync([q](){
+        q->async([](){
+            printf("sleep 4\n");
+            sleep(1);
+            printf("wake up (4)!\n");
+        });
         printf("sleep 3\n");
         sleep(1);
         printf("wake up (3)!\n");
