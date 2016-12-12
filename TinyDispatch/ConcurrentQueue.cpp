@@ -81,4 +81,8 @@ void ConcurrentQueue::sync(Block b, int i)
     }
 }
 
-int ConcurrentQueue::defaultConcurrentThreadsCount(){return 2;}
+int ConcurrentQueue::defaultConcurrentThreadsCount()
+{
+    int t = std::thread::hardware_concurrency();
+    return t > 1 ? t : 2;
+}

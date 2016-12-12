@@ -38,7 +38,8 @@ int main(int argc, const char * argv[])
        std::cout << "Hello, World!\n";
     });
     sleep(4);
-    printf("testQueue_concurrent\n");
+    printf("default concurrent queue threads: %i\n",TinyDispatch::ConcurrentQueue::defaultConcurrentThreadsCount());
+    printf("testQueue_concurrent (4 threads)\n");
     q = TinyDispatch::ConcurrentQueue::get("testQueue_concurrent",4);
     for(int i = 0; i < 4; i++)
     {
