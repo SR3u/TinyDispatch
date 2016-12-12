@@ -2,17 +2,16 @@
 //  Queue.hpp
 //  TinyDispatch
 //
-//  Created by Sergey Rump (SPHERE) on 01.12.2016.
+//  Created by Sergey Rump (SPHERE) on 12.12.2016.
 //  Copyright © 2016 sr3u. All rights reserved.
 //
 
-#ifndef Queue_hpp
-#define Queue_hpp
+#ifndef Queue_h
+#define Queue_h
 
-#include <thread>
-#include <mutex>
 #include <string>
-#include <queue>
+#include <functional>
+#include <thread>
 
 namespace TinyDispatch
 {
@@ -20,24 +19,12 @@ namespace TinyDispatch
     
     class Queue
     {
-    private:
-        std::thread *thread = NULL;
-        std::mutex access; // access the 'queue' field
-        std::mutex exec_access; // access the execution (for sync method)
-        std::queue<Block> queue;
-        static void queueThreadLoop(Queue* q);
-        
-        Queue(std::string identifier);
-        void commit(void);
-        bool isEmpty();
     public:
         static Queue* get(std::string identifier);
+        static Queue* global();
         
-        void async(Block b);
-        void sync(Block b);
-                
+        virtual void async(Block b) = 0;
+        virtual void sync(Block b) = 0;
     };
 }
-
-
-#endif /* Queue_hpp */
+#endif /* Queue_h */

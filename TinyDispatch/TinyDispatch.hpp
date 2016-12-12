@@ -13,6 +13,8 @@
 /* The classes below are exported */
 #pragma GCC visibility push(default)
 #include "Queue.hpp"
+#include "SerialQueue.hpp"
+#include "ConcurrentQueue.hpp"
 namespace TinyDispatch
 {
     

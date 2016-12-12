@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41D2B4361DFED2740089A4BD /* Queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41D2B4351DFED2740089A4BD /* Queue.cpp */; };
+		41D2B43A1DFED93B0089A4BD /* ConcurrentQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41D2B4381DFED93B0089A4BD /* ConcurrentQueue.cpp */; };
+		41D2B43B1DFED93B0089A4BD /* ConcurrentQueue.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 41D2B4391DFED93B0089A4BD /* ConcurrentQueue.hpp */; };
+		41D2B43E1DFED9550089A4BD /* QueuePool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41D2B43C1DFED9550089A4BD /* QueuePool.cpp */; };
+		41D2B43F1DFED9550089A4BD /* QueuePool.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 41D2B43D1DFED9550089A4BD /* QueuePool.hpp */; };
 		41EC6B751DF05DD600AE29B6 /* TinyDispatch.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 41EC6B741DF05DD600AE29B6 /* TinyDispatch.hpp */; };
 		41EC6B771DF05DD600AE29B6 /* TinyDispatchPriv.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 41EC6B761DF05DD600AE29B6 /* TinyDispatchPriv.hpp */; };
 		41EC6B861DF05DE700AE29B6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41EC6B851DF05DE700AE29B6 /* main.cpp */; };
 		41EC6B8A1DF05DEE00AE29B6 /* libTinyDispatch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41EC6B711DF05DD600AE29B6 /* libTinyDispatch.a */; };
-		41EC6B8F1DF0604200AE29B6 /* Queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41EC6B8D1DF0604200AE29B6 /* Queue.cpp */; };
-		41EC6B901DF0604200AE29B6 /* Queue.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 41EC6B8E1DF0604200AE29B6 /* Queue.hpp */; };
+		41EC6B8F1DF0604200AE29B6 /* SerialQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41EC6B8D1DF0604200AE29B6 /* SerialQueue.cpp */; };
+		41EC6B901DF0604200AE29B6 /* SerialQueue.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 41EC6B8E1DF0604200AE29B6 /* SerialQueue.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,13 +33,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		41D2B4351DFED2740089A4BD /* Queue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Queue.cpp; sourceTree = "<group>"; };
+		41D2B4371DFED2F60089A4BD /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
+		41D2B4381DFED93B0089A4BD /* ConcurrentQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConcurrentQueue.cpp; sourceTree = "<group>"; };
+		41D2B4391DFED93B0089A4BD /* ConcurrentQueue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ConcurrentQueue.hpp; sourceTree = "<group>"; };
+		41D2B43C1DFED9550089A4BD /* QueuePool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QueuePool.cpp; sourceTree = "<group>"; };
+		41D2B43D1DFED9550089A4BD /* QueuePool.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = QueuePool.hpp; sourceTree = "<group>"; };
 		41EC6B711DF05DD600AE29B6 /* libTinyDispatch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTinyDispatch.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		41EC6B741DF05DD600AE29B6 /* TinyDispatch.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TinyDispatch.hpp; sourceTree = "<group>"; };
 		41EC6B761DF05DD600AE29B6 /* TinyDispatchPriv.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TinyDispatchPriv.hpp; sourceTree = "<group>"; };
 		41EC6B831DF05DE600AE29B6 /* TinyDispatchTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TinyDispatchTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41EC6B851DF05DE700AE29B6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		41EC6B8D1DF0604200AE29B6 /* Queue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Queue.cpp; sourceTree = "<group>"; };
-		41EC6B8E1DF0604200AE29B6 /* Queue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
+		41EC6B8D1DF0604200AE29B6 /* SerialQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SerialQueue.cpp; sourceTree = "<group>"; };
+		41EC6B8E1DF0604200AE29B6 /* SerialQueue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SerialQueue.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +90,14 @@
 			children = (
 				41EC6B741DF05DD600AE29B6 /* TinyDispatch.hpp */,
 				41EC6B761DF05DD600AE29B6 /* TinyDispatchPriv.hpp */,
-				41EC6B8D1DF0604200AE29B6 /* Queue.cpp */,
-				41EC6B8E1DF0604200AE29B6 /* Queue.hpp */,
+				41EC6B8E1DF0604200AE29B6 /* SerialQueue.hpp */,
+				41EC6B8D1DF0604200AE29B6 /* SerialQueue.cpp */,
+				41D2B4371DFED2F60089A4BD /* Queue.hpp */,
+				41D2B4351DFED2740089A4BD /* Queue.cpp */,
+				41D2B4391DFED93B0089A4BD /* ConcurrentQueue.hpp */,
+				41D2B4381DFED93B0089A4BD /* ConcurrentQueue.cpp */,
+				41D2B43C1DFED9550089A4BD /* QueuePool.cpp */,
+				41D2B43D1DFED9550089A4BD /* QueuePool.hpp */,
 			);
 			path = TinyDispatch;
 			sourceTree = "<group>";
@@ -100,7 +117,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41EC6B901DF0604200AE29B6 /* Queue.hpp in Headers */,
+				41EC6B901DF0604200AE29B6 /* SerialQueue.hpp in Headers */,
+				41D2B43B1DFED93B0089A4BD /* ConcurrentQueue.hpp in Headers */,
+				41D2B43F1DFED9550089A4BD /* QueuePool.hpp in Headers */,
 				41EC6B751DF05DD600AE29B6 /* TinyDispatch.hpp in Headers */,
 				41EC6B771DF05DD600AE29B6 /* TinyDispatchPriv.hpp in Headers */,
 			);
@@ -185,7 +204,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41EC6B8F1DF0604200AE29B6 /* Queue.cpp in Sources */,
+				41EC6B8F1DF0604200AE29B6 /* SerialQueue.cpp in Sources */,
+				41D2B43E1DFED9550089A4BD /* QueuePool.cpp in Sources */,
+				41D2B4361DFED2740089A4BD /* Queue.cpp in Sources */,
+				41D2B43A1DFED93B0089A4BD /* ConcurrentQueue.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +362,7 @@
 				41EC6B7E1DF05DD600AE29B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		41EC6B871DF05DE700AE29B6 /* Build configuration list for PBXNativeTarget "TinyDispatchTest" */ = {
 			isa = XCConfigurationList;
@@ -348,6 +371,7 @@
 				41EC6B891DF05DE700AE29B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

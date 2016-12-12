@@ -12,7 +12,8 @@
 
 int main(int argc, const char * argv[])
 {
-    TinyDispatch::Queue *q = TinyDispatch::Queue::get("testQueue");
+    printf("testQueue_serial\n");
+    TinyDispatch::Queue *q = TinyDispatch::Queue::get("testQueue_serial");
     q->async([](){
         printf("sleep 1\n");
         sleep(1);
@@ -33,8 +34,22 @@ int main(int argc, const char * argv[])
         sleep(1);
         printf("wake up (3)!\n");
     });
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    sleep(10);
+    q->sync([](){
+       std::cout << "Hello, World!\n";
+    });
+    sleep(4);
+    printf("testQueue_concurrent\n");
+    q = TinyDispatch::ConcurrentQueue::get("testQueue_concurrent",4);
+    for(int i = 0; i < 4; i++)
+    {
+        q->async([i](){
+            printf("sleep %i (1 sec)\n",i);
+            sleep(1);
+        });
+    }
+    q->sync([](){
+        printf("sleep main (1 sec)\n");
+        sleep(1);
+    });
     return 0;
 }
